@@ -1,0 +1,17 @@
+﻿fields:
+  agent_id: ["agent_id","id_conseiller","conseiller_id","user_id","mandataire_id","id_mandataire"]
+  agent_email: ["email","mail","e-mail"]
+  agent_sex: ["sexe","gender"]
+  agent_age: ["age"]
+  agent_department: ["departement","dÃ©partement","dept","department","code_departement","code_dept"]
+  agent_joined_at: ["date_entree","joined_at","created_at","date_affiliation","date_inscription"]
+  agent_left_at: ["date_sortie","left_at","churned_at","date_resiliation"]
+
+  mandate_id: ["mandat_id","id_mandat","mandate_id"]
+  mandate_created_at: ["mandat_created_at","mandate_created_at","date_mandat","date_signature_mandat","created_at_mandat"]
+  mandate_type: ["type_mandat","mandate_type","type_de_mandat"]
+
+  compromise_id: ["compromis_id","id_compromis","saleagreement_id","transaction_id"]
+  compromise_signed_at: ["signed_at","date_signature","date_compromis","compromis_signed_at"]
+  deed_at: ["date_acte","deed_at","attestation_acte_date","acte_authentique_date"]
+  fees_ht: ["honoraires_ht","fees_ht","commission_ht","ca_ht","revenue_ht"]

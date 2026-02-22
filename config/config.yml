@@ -1,0 +1,26 @@
+﻿project:
+  name: BSK_Pilotage
+  timezone: Europe/Paris
+
+data:
+  # Mode local (si tu synchronises Drive sur ton PC)
+  local_dataraw_path: ./DataRaw
+
+  # Mode Drive (recommandÃ© pour URL publique Streamlit Cloud)
+  drive_enabled: true
+  drive_folder_id: "PASTE_DRIVE_FOLDER_ID_HERE"
+
+  # Local only: chemin vers le JSON du service account (sur ton PC)
+  service_account_json_path: "./secrets/service_account.json"
+
+market:
+  enabled: true
+  meilleursreseaux_evolutions_url: "https://meilleursreseaux.com/immobilier/mandataires/evolutions/"
+  igedd_longterm_url: "https://www.igedd.developpement-durable.gouv.fr/prix-immobilier-evolution-a-long-terme-a1048.html"
+  acpr_credit_habitat_url: "https://acpr.banque-france.fr/fr/publications-et-statistiques/statistiques/suivi-mensuel-de-la-production-de-credits-lhabitat"
+  insee_price_series_url: "https://www.insee.fr/fr/statistiques/series/105071770"
+  datagouv_ventes_anciens_url: "https://www.data.gouv.fr/datasets/nombre-de-ventes-de-maisons-et-appartements-anciens"
+
+model:
+  horizon_months: 36
+  churn_observation_months: 6
