@@ -12,7 +12,7 @@ if (MART/'mart_funnel.parquet').exists():
     funnel = pd.read_parquet(MART/'mart_funnel.parquet')
     fact = pd.read_parquet(MART/'fact_deal.parquet')
     ca = float(fact['fees_ht'].fillna(0).sum())
-    col1.metric('CA HT', f\"{ca:,.0f} â‚¬\".replace(',', ' '))
+    coll.metric("CA HT", f"{ca:,.0f} €".replace(",", " "))
     col2.metric('Compromis', int(fact['compromise_signed_at'].notna().sum()))
     col3.metric('Actes', int(fact['deed_at'].notna().sum()))
 
